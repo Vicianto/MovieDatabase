@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/register_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/sign_box_padding"
+            android:text="@string/top_register_header"
+            android:textColor="@color/colorEdit" />
+
+        <View
+            android:layout_width="@dimen/line_zero"
+            android:layout_height="@dimen/line_one"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorEdit" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/register_body_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/margin_start_end_land"
+        android:layout_marginRight="@dimen/margin_start_end_land"
+        android:layout_weight="1"
+        android:animateLayoutChanges="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/register_field_margin_land"
+            android:orientation="horizontal">
+
+            <com.gcreative_apps_studio.custom.CustomEditText
+                android:id="@+id/register_username_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/colorEdit"
+                android:hint="@string/register_user_hint"
+                android:inputType="textNoSuggestions"
+                android:nextFocusForward="@id/register_password_text"
+                android:padding="@dimen/sign_box_padding"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:id="@+id/register_username_status"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@color/colorEdit"
+                android:maxHeight="@dimen/register_logo_size"
+                android:maxWidth="@dimen/register_logo_size"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_action_wrong" />
+
+        </LinearLayout>
+
+        <com.gcreative_apps_studio.custom.CustomEditText
+            android:id="@+id/register_password_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/register_field_margin_land"
+            android:background="@color/colorEdit"
+            android:hint="@string/register_pass_hint"
+            android:inputType="textPassword"
+            android:nextFocusForward="@id/register_password_again_text"
+            android:padding="@dimen/sign_box_padding"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/register_field_margin_land"
+            android:orientation="horizontal">
+
+            <com.gcreative_apps_studio.custom.CustomEditText
+                android:id="@+id/register_password_again_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/colorEdit"
+                android:hint="@string/register_pass_again_hint"
+                android:inputType="textPassword"
+                android:nextFocusForward="@id/register_email_text"
+                android:padding="@dimen/sign_box_padding"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:id="@+id/register_password_again_status"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@color/colorEdit"
+                android:maxHeight="@dimen/register_logo_size"
+                android:maxWidth="@dimen/register_logo_size"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_action_wrong" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/register_field_margin_land"
+            android:orientation="horizontal">
+
+            <com.gcreative_apps_studio.custom.CustomEditText
+                android:id="@+id/register_email_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/colorEdit"
+                android:hint="@string/register_email_hint"
+                android:inputType="textEmailAddress"
+                android:nextFocusDown="@id/register_sec_text"
+                android:nextFocusForward="@id/register_sec_text"
+                android:nextFocusUp="@id/register_sec_text"
+                android:padding="@dimen/sign_box_padding"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:id="@+id/register_email_status"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@color/colorEdit"
+                android:maxHeight="@dimen/register_logo_size"
+                android:maxWidth="@dimen/register_logo_size"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_action_wrong" />
+
+        </LinearLayout>
+
+        <com.gcreative_apps_studio.custom.CustomEditText
+            android:id="@+id/register_sec_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/register_field_margin_land"
+            android:background="@color/colorEdit"
+            android:hint="@string/register_sec_hint"
+            android:inputType="textNoSuggestions"
+            android:nextFocusForward="@id/register_sec_q_text"
+            android:padding="@dimen/sign_box_padding"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_size" />
+
+        <com.gcreative_apps_studio.custom.CustomEditText
+            android:id="@+id/register_sec_q_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/register_field_margin_last_land"
+            android:background="@color/colorEdit"
+            android:hint="@string/register_sec_q_hint"
+            android:inputType="textNoSuggestions"
+            android:padding="@dimen/sign_box_padding"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/register_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/register_button_margin"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:soundEffectsEnabled="true"
+            android:text="@string/register_button_text"
+            android:textColor="@color/colorEdit"
+            android:textSize="@dimen/center_log_in_text_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

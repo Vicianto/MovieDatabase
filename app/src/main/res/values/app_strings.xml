@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--                       -->
+    <!-- LANGUAGE INDEPENDENT  -->
+    <!--                       -->
+
+    <!-- APP -->
+    <string name="app_name">MovieDatabase</string>
+
+    <!-- MESSAGING -->
+    <string name="app_send_type">text/plain"</string>
+    <string name="app_send_report_type">message/rfc822</string>
+    <string name="app_send_report_email">gferenc88@gmail.com</string>
+
+    <!-- RESET PASS -->
+    <string name="app_reset_pass">Start123</string>
+
+    <!-- INTENT_TRANSFER -->
+    <string name="app_pass_more_key">ID</string>
+
+    <!-- OMDB-->
+    <string name="app_omdb_url">http://www.omdbapi.com/</string>
+    <string name="app_omdb_key">f2599209</string>
+    <string name="app_omdb_home">home</string>
+    <string name="app_omdb_home_page">1</string>
+    <string name="app_omdb_empty_image_url">n/a</string>
+</resources>

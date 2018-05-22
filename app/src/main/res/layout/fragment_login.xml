@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <!-- LOGO -->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/logo_width"
+        android:layout_height="@dimen/logo_width"
+        android:layout_marginBottom="@dimen/logo_margin_bottom"
+        android:layout_marginEnd="@dimen/margin_start_end"
+        android:layout_marginStart="@dimen/margin_start_end"
+        android:layout_marginTop="@dimen/logo_margin_top"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_icon"
+        app:layout_constraintBottom_toTopOf="@+id/centerLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <!-- CENTER -->
+
+    <LinearLayout
+        android:id="@+id/centerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/center_margin_bottom"
+        android:layout_marginEnd="@dimen/margin_start_end"
+        android:layout_marginStart="@dimen/margin_start_end"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/bottomLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo">
+
+        <LinearLayout
+            android:id="@+id/sign_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sign_box_margin_bottom"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/line_zero"
+                android:layout_height="@dimen/line_one"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/colorEdit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/sign_box_padding"
+                android:text="@string/center_sign_text"
+                android:textColor="@color/colorEdit" />
+
+            <View
+                android:layout_width="@dimen/line_zero"
+                android:layout_height="@dimen/line_one"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/colorEdit" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/user_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sign_box_margin_bottom"
+            android:background="@color/colorEdit"
+            android:hint="@string/center_username_hint"
+            android:inputType="textNoSuggestions"
+            android:padding="@dimen/sign_box_padding"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/password_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sign_box_margin_bottom"
+            android:background="@color/colorEdit"
+            android:hint="@string/center_password_hint"
+            android:inputType="textPassword"
+            android:padding="@dimen/sign_box_padding"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:soundEffectsEnabled="true"
+            android:text="@string/center_login_text"
+            android:textColor="@color/colorEdit"
+            android:textSize="@dimen/center_log_in_text_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <!-- BOTTOM -->
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/bottom_margin_bottom"
+        android:layout_marginEnd="@dimen/margin_start_end"
+        android:layout_marginStart="@dimen/margin_start_end"
+        android:layout_weight="0.1"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_one"
+            android:layout_gravity="center"
+            android:background="@color/colorEdit" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bottom_margin_top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/remind_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="@dimen/sign_box_padding"
+                android:soundEffectsEnabled="true"
+                android:text="@string/bottom_forgot_text"
+                android:textColor="@color/colorEdit" />
+
+            <View
+                android:layout_width="@dimen/line_one"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/colorEdit" />
+
+            <TextView
+                android:id="@+id/register_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="@dimen/sign_box_padding"
+                android:soundEffectsEnabled="true"
+                android:text="@string/bottom_register_text"
+                android:textColor="@color/colorEdit" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

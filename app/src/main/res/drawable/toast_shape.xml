@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid
+        android:color="@color/colorAccent"/>
+    <corners
+        android:radius="@dimen/toast_shape_radius" />
+    <padding
+        android:left="@dimen/toast_shape_paddings"
+        android:top="@dimen/toast_shape_paddings"
+        android:right="@dimen/toast_shape_paddings"
+        android:bottom="@dimen/toast_shape_paddings" />
+</shape>

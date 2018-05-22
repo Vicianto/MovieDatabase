@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--      -->
+    <!-- LOGO -->
+    <!--      -->
+
+    <!-- LOGO_SIZE -->
+    <dimen name="logo_width">300dp</dimen>
+    <dimen name="logo_height">300dp</dimen>
+    <dimen name="logo_width_land">200dp</dimen>
+    <dimen name="logo_height_land">200dp</dimen>
+
+
+    <!--        -->
+    <!-- CENTER -->
+    <!--        -->
+
+    <!-- CENTER_MARGINS -->
+    <dimen name="sign_box_margin_bottom">30dp</dimen>
+    <dimen name="sign_box_margin_bottom_land">15dp</dimen>
+
+</resources>

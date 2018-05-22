@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--           -->
+    <!-- GENERAL   -->
+    <!--           -->
+
+    <integer name="general_soft_keyboard_delay">400</integer>
+    <integer name="general_search_delay">200</integer>
+    <integer name="general_search_warning_delay">1000</integer>
+
+</resources>

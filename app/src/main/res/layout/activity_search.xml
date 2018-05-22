@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/search_toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/search_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/search_back_margin_end"
+            android:layout_marginStart="@dimen/search_back_margin_start"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_action_back"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/search_text_field"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorEdit"
+            android:hint="@string/search_text_field_hint"
+            android:inputType="textNoSuggestions"
+            android:textColor="@color/colorEdit"
+            android:textColorHint="@color/colorEdit"
+            android:textCursorDrawable="@null"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/search_find_micro_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/search_micro_margin_end"
+            android:layout_marginStart="@dimen/search_micro_margin_start"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_action_search" />
+
+        <ImageView
+            android:id="@+id/search_fav_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/search_fav_margin_end"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_action_favorites" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/search_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorEdit">
+
+    </FrameLayout>
+
+</LinearLayout>

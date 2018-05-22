@@ -1,0 +1,157 @@
+<resources>
+
+    <!--                -->
+    <!-- LOGIN_FRAGMENT -->
+    <!--                -->
+
+    <!--        -->
+    <!-- CENTER -->
+    <!--        -->
+
+    <!-- CENTER_SIGN -->
+    <string name="center_sign_text">Sign in</string>
+
+    <!-- CENTER_LOG_IN -->
+    <string name="center_username_hint">Username</string>
+    <string name="center_password_hint">Password</string>
+    <string name="center_login_text">Log In</string>
+
+    <!--        -->
+    <!-- CENTER -->
+    <!--        -->
+
+
+    <!-- BOTTOM_MISC -->
+    <string name="bottom_forgot_text">Forgot?</string>
+    <string name="bottom_register_text">Register</string>
+
+
+    <!--                    -->
+    <!-- REGISTER_FRAGMENT  -->
+    <!--                    -->
+
+    <!--     -->
+    <!-- TOP -->
+    <!--     -->
+
+    <!-- TOP_TEXT -->
+    <string name="top_register_header">New User</string>
+
+
+    <!--        -->
+    <!-- CENTER -->
+    <!--        -->
+
+    <!-- CENTER_TEXT -->
+    <string name="register_user_hint">Username</string>
+    <string name="register_pass_hint">Password</string>
+    <string name="register_pass_again_hint">Password Again</string>
+    <string name="register_email_hint">Email</string>
+    <string name="register_sec_hint">Security Question</string>
+    <string name="register_sec_q_hint">Security Answer</string>
+    <string name="register_button_text">Register</string>
+
+
+    <!--                  -->
+    <!-- REMIND_FRAGMENT  -->
+    <!--                  -->
+
+    <!--     -->
+    <!-- TOP -->
+    <!--     -->
+
+    <!-- TOP_TEXT -->
+    <string name="top_remind_header">Remind</string>
+
+
+    <!--        -->
+    <!-- CENTER -->
+    <!--        -->
+
+    <!-- CENTER_TEXT -->
+    <string name="remind_username_hint">Username</string>
+    <string name="remind_sec_hint">Enter the correct username</string>
+    <string name="remind_sec_q_hint">Security Answer</string>
+    <string name="remind_button_text">Remind</string>
+
+
+
+    <!--                  -->
+    <!-- Search_Activity  -->
+    <!--                  -->
+
+    <!--     -->
+    <!-- TOP -->
+    <!--     -->
+
+    <!-- HINT -->
+    <string name="search_text_field_hint">Search OMDb</string>
+
+
+
+    <!--                      -->
+    <!-- FAV_Search_Fragment  -->
+    <!--                      -->
+
+    <!--      -->
+    <!-- View -->
+    <!--      -->
+
+    <!-- DEFAULT -->
+    <string name="search_fragment_title_default">"%s (%s)"</string>
+    <string name="search_fragment_id_default">IMDb: %s</string>
+    <string name="search_fragment_type_default">Type: %s</string>
+    <string name="search_fragment_note_hint">Click here to add notes…</string>
+
+    <!--                -->
+    <!-- MORE_ACTIVITY  -->
+    <!--                -->
+
+    <!--      -->
+    <!-- View -->
+    <!--      -->
+
+    <!-- HEADERS -->
+    <string name="more_header_cast">Cast</string>
+    <string name="more_header_director">Director</string>
+    <string name="more_header_writer">Writer</string>
+
+
+    <!-- DEFAULT -->
+    <string name="more_header_misc">%s\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009%s\u0009\u0009\u0009\u0009%s</string>
+    <string name="more_header_ratings">IMDb: %s\u0009\u0009\u0009\u0009\u0009\u0009\u0009Metascore: %s</string>
+
+
+    <!--           -->
+    <!-- MESSAGES  -->
+    <!--           -->
+
+    <!-- DIALOGS -->
+    <string name="dialog_general_ok">OK</string>
+    <string name="dialog_remind_title">Remind</string>
+    <string name="dialog_remind_success">Your password has been set to: %s.</string>
+    <string name="dialog_remind_failure">Bad username or answer! Please try again.</string>
+    <string name="dialog_error_title">Oops</string>
+    <string name="dialog_error_text">An error has been occurred! Would you like to send the error report to the developer?</string>
+    <string name="dialog_error_ok">Send</string>
+    <string name="dialog_error_cancel">Cancel</string>
+    <string name="dialog_error_send_report_title">Send mail…</string>
+
+    <!-- MAIL -->
+    <string name="app_send_report_subject">ERROR REPORT</string>
+
+    <!-- GENERAL -->
+    <string name="general_user_created">User has been created. Please log in</string>
+    <string name="general_speech_to_text">Speak now!</string>
+
+    <!-- MESSAGES_ERRORS -->
+    <string name="error_user_fields_empty">Please fill all fields</string>
+    <string name="error_user_pass_match">Passwords are not match</string>
+    <string name="error_user_login_failed">Wrong username or password</string>
+    <string name="error_user_already_exists">Username or the email is already in use</string>
+    <string name="error_no_app">Unable to find app to perform this action</string>
+    <string name="error_no_internet">Could not connect to the server. Check your connection!</string>
+    <string name="error_at_least_two_character">Enter at least 2 character</string>
+    <string name="error_speech_to_text_not_supported">Speech to text is not supported on this device</string>
+
+</resources>

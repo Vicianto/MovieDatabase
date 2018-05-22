@@ -1,0 +1,138 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:89242785524729125",
+      "lastPropertyId": "7:4527451226236404218",
+      "name": "User",
+      "properties": [
+        {
+          "id": "1:6668835300610521605",
+          "name": "id"
+        },
+        {
+          "id": "2:3896230546348837505",
+          "name": "username"
+        },
+        {
+          "id": "3:133847274004125371",
+          "name": "password"
+        },
+        {
+          "id": "4:8104868835493159092",
+          "name": "email"
+        },
+        {
+          "id": "5:2832212238659123846",
+          "name": "security_question"
+        },
+        {
+          "id": "6:4633837809244138873",
+          "name": "security_answer"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:2496418470545906942",
+      "lastPropertyId": "19:5390181137826565293",
+      "name": "Movie",
+      "properties": [
+        {
+          "id": "1:4148528365195518270",
+          "name": "id"
+        },
+        {
+          "id": "2:7632923030195805304",
+          "name": "title"
+        },
+        {
+          "id": "3:3807762862485510258",
+          "name": "year"
+        },
+        {
+          "id": "4:13540191430901400",
+          "name": "rated"
+        },
+        {
+          "id": "5:4942271778745503657",
+          "name": "released"
+        },
+        {
+          "id": "6:477462690097937020",
+          "name": "runtime"
+        },
+        {
+          "id": "7:7415525219410635748",
+          "name": "genre"
+        },
+        {
+          "id": "8:369295055821403688",
+          "name": "director"
+        },
+        {
+          "id": "9:4926549710308492666",
+          "name": "writer"
+        },
+        {
+          "id": "10:843017832319674466",
+          "name": "actors"
+        },
+        {
+          "id": "11:7708768757265441270",
+          "name": "plot"
+        },
+        {
+          "id": "12:3733045902978209598",
+          "name": "language"
+        },
+        {
+          "id": "13:2503004294478987348",
+          "name": "poster"
+        },
+        {
+          "id": "14:7280281439062601721",
+          "name": "metascore"
+        },
+        {
+          "id": "15:7946336465939182386",
+          "name": "imdbRating"
+        },
+        {
+          "id": "16:6453683168359165860",
+          "name": "imdbID"
+        },
+        {
+          "id": "17:8940337300916086082",
+          "name": "type"
+        },
+        {
+          "id": "18:5207488207257071847",
+          "name": "notes"
+        },
+        {
+          "id": "19:5390181137826565293",
+          "name": "userID"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "2:2496418470545906942",
+  "lastIndexId": "0:0",
+  "lastRelationId": "1:5746752701527905339",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    4527451226236404218
+  ],
+  "retiredRelationUids": [
+    5746752701527905339
+  ],
+  "version": 1
+}
