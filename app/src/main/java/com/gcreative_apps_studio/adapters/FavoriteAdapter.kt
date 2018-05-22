@@ -32,9 +32,9 @@ class FavoriteAdapter(movies: MutableList<Movie>?, loader: (id: String?) -> Unit
         val movie: Movie? = movies?.get(position)
 
         if (!movie?.poster?.toLowerCase().equals(holder.poster?.tag.toString())) loadPoster(movie?.poster, holder.poster)
-        holder.title?.text = String.format(holder.title?.text.toString(), movie?.title, movie?.year)
-        holder.id?.text = String.format(holder.id?.text.toString(), movie?.imdbID)
-        holder.type?.text = String.format(holder.type?.text.toString(), movie?.type)
+        holder.title?.text = String.format(holder.title?.tag.toString(), movie?.title, movie?.year)
+        holder.id?.text = String.format(holder.id?.tag.toString(), movie?.imdbID)
+        holder.type?.text = String.format(holder.type?.tag.toString(), movie?.type)
         holder.note?.setText(movie?.notes)
 
         holder.main?.setOnClickListener(null)

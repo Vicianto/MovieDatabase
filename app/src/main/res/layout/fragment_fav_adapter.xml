@@ -40,7 +40,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="@string/search_fragment_title_default"
+                    android:tag="@string/search_fragment_title_default"
                     android:textColor="@color/colorEdit"
                     android:textSize="@dimen/search_fragment_title_text_size"
                     android:textStyle="bold" />
@@ -50,7 +50,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="@string/search_fragment_id_default"
+                    android:tag="@string/search_fragment_id_default"
                     android:textColor="@color/colorEdit"
                     android:textSize="@dimen/search_fragment_text_size" />
 
@@ -59,7 +59,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="@string/search_fragment_type_default"
+                    android:tag="@string/search_fragment_type_default"
                     android:textColor="@color/colorEdit"
                     android:textSize="@dimen/search_fragment_text_size" />
 
